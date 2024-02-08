@@ -31,6 +31,9 @@ github:
 twitter:
   username: twitter_username # change to your twitter username
 
+tistory:
+  url: https://toast1ng.tistory.com/
+
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
@@ -69,7 +72,7 @@ theme_mode:	# [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: /assets/img/free-icon-bread-3348021.png
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
