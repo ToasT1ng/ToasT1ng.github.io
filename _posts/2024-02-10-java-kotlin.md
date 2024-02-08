@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Java와 Kotlin의 차이    # Title of the page
-date: 2024-02-09 00:01:01 +09:00
+date: 2024-02-10 00:01:01 +09:00
 categories: [개발]
 tags: [kotlin, java]                    
 ---
