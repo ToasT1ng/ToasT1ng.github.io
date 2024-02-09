@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Java와 Kotlin의 차이    # Title of the page
+title: Java와 Kotlin의 차이   
 date: 2024-02-10 00:01:01 +09:00
-categories: [개발]
+categories: [개발, Kotlin]
 tags: [kotlin, java]                    
 ---
 

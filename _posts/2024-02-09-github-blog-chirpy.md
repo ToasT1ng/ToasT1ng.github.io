@@ -17,6 +17,8 @@ tags: [gitblog, github-blog, github, chirpy]
 
 오늘 미뤄뒀던 숙제를 하나 해치웠다. 아주 맘에 드는 테마를 찾은 것이다!
 
+<br/>
+
 ## Chirpy 테마!
 1) 기존 티스토리 블로그에서 사용하던 레이아웃과 비슷한 테마 없을까?  
 2) 그러면서 코드 레이아웃이 적당히 예뻤으면 좋겠다.
@@ -43,6 +45,7 @@ Error:  Logging at level: debug Configuration file: /github/workspace/./_config.
 
 테마를 세팅한 사람이 뭔가 커스터마이징 해둔거 같은데 Git Action에 대해서 잘 모르므로... 자세한건 더 공부해봐야겠다.
 
+<br/>
 
 ## 세팅
 
@@ -105,6 +108,8 @@ avatar: /assets/img/free-icon-bread-3348021.png  # 원하는 Local, CDN 등등�
 
 ### 글 공유하기 관련 설정 변경
 `_data/share.yml` 파일에서 적절히 삭제/추가/변경하면 된다.
+
+<br/>
 
 ### 관련 주소
 이 글을 보는 사람에게 도움이 될까하여, 나의 Git 블로그 레포 주소를 남기고 글을 마친다.

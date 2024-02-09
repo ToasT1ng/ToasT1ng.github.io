@@ -43,7 +43,7 @@ social:
     - https://github.com/ToasT1ng # change to your github homepage
     # - https://www.linkedin.com/in/username
 
-google_site_verification: # fill in to your verification string
+google-site-verification: google85dafa2d8e7c688f.html
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
@@ -82,7 +82,7 @@ social_preview_image: # string, local or CORS resources
 toc: true
 
 comments:
-  active: # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+  active: utterances # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
