@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 깃허브 블로그 개설                                # Title of the page
+title: Github 블로그 개설                                
 date: 2024-02-02 12:01:01 +09:00
 categories: [잡담]
 ---

@@ -3,7 +3,7 @@ layout: post
 title: Github 블로그 만들기 (feat. Chirpy 테마)  
 date: 2024-02-09 04:07:01 +09:00
 categories: [블로그]
-tags: [gitblog, github-blog, github, chirpy]                    
+tags: [gitblog, github blog, github, chirpy, 깃허브 블로그, 깃허브 블로그 만들기]                    
 ---
 
 ## 테마 유람기

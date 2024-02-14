@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Java와 Kotlin의 차이   
-date: 2024-02-10 00:01:01 +09:00
+title: Kotlin 기본 문법 (1)   
+date: 2024-02-10 10:01:01 +09:00
 categories: [개발, Kotlin]
-tags: [kotlin, java]                    
+tags: [kotlin, java, kotlin java 비교]                    
 ---
 
-Java와 Kotlin 차이에 대한 관한 강의를 듣고 간단히 정리해본다.
-(작성 진행중)
+<br/>
+Kotlin의 기본 문법을 Java와 비교해 간단히 포스팅한다.
 
 <br/>
 
@@ -41,39 +41,9 @@ val b: Int = 1
 
 ---
 
-# 연산자
-## operator 함수
-Kotlin에서는 함수 대신 "+" 를 사용해 연산할 수 있게 해주는 기능을 제공한다.
-```java
-public JavaMoney plus(JavaMoney other) {
-    return new JavaMoney(this.amount + other.amount);
-}
-    
-public void main() {
-    JavaMoney a = new JavaMoney(10);
-    JavaMoney b = new JavaMoney(20);
-        
-    JavaMoney c = a.plus(b);
-}
-```
-
-```kotlin
-operator fun plus(other: Money) : Money{
-    return Money(this.amount + other.amount)
-}
-    
-fun main() {
-    val a = Money(10)
-    val b = Money(20)
-        
-    // 아래 두 표현은 동일하다.
-    val c = a.plus(b)
-    val c = a + b 
-}
-```
-## 비교
-**동등성 (equality)**    
+# 비교 연산
 Java에서의 동일성 판단 연산자가 Kotiln에서의 동등성 판단 연산자가 되기 때문에 유의해야한다.
+## 동등성 (equality)
 ```java
 if (a.equals(b))
 ```
@@ -81,7 +51,7 @@ if (a.equals(b))
 if (a == b)
 ```
 
-**동일성 (identity)**
+## 동일성 (identity)
 
 ```java
 if (a == b)
@@ -95,20 +65,50 @@ if (a === b)
 ---
 
 # 제어문
+## if-else문
 Kotlin에서는 바로 Return이 가능하다. (if-else문 자체가 Expression이 된다.) 3항 연산자가 존재하지 않는다.
 ```java
-public int hello(int a) {
+public int compare(int a) {
     if (a > 1) return 1;
     else return 2;
 }
 ```
 
 ```kotlin
-fun hello(a: Int): Int {     
+fun compare(a: Int): Int {     
     return if (a > 1) 1 else 2
 }
 ```
 
+
+## switch문
+마찬가지로 바로 Return이 가능하다. Kotlin은 Java와 달리 switch문이 굉장히 깔끔하게 표현된다.     
+웬만한 if-else문을 when으로 바꾸면 코드 관리 편의성이 높아진다.
+```java
+public String main(int n) {
+  switch (n) {
+    case 1:
+      return "1";
+    case 2:
+      return "2";
+    case 3:
+      return "3";
+    default:
+      return "4 or more";
+  }
+}
+```
+
+```kotlin
+fun main(n: Int): String {
+  return when (n) {
+    1 -> "1"
+    2 -> "2"
+    3 -> "3"
+    else -> "4 or more"
+  }
+}
+```
 
 <br/>
 
@@ -140,7 +140,7 @@ for (i in 5 downTo 1 step 2) {
 ## for-each문
 Kotlin에서는 변수를 따로 선언하지 하지 않는다. `:` 대신 `in` 을 사용한다.
 ```java
-List<Long> list = Arrays.asList(1L, 2L);
+final List<Long> list = Arrays.asList(1L, 2L);
 for (long number : list) {
     System.out.println(number);
 }
@@ -161,27 +161,27 @@ for (number in list) {
 ## 평범한 try-catch
 Kotlin에서는 바로 Return이 가능하다. (try-catch문 자체가 Expression이 된다.)
 ```java
-public int hello(String a) {
+public double parseDouble(String a) {
     try {
-        return Integer.parseInt(a);
+        return Double.parseDouble(a);
     } catch (NumberFormatException e) {
-        return 2;
+        return 2.0d;
     }
 }
 ```
 
 ```kotlin
-fun hello(a: String): Int {
+fun parseDouble(a: String): Double {
     return try {
-        a.toInt()
+        a.toDouble()
     } catch (e: NumberFormatException) {
-        2
+        2.0
     }
 }
 ```
 
 ## try-with-resource
-Kotlin에서는 try with resource가 존재하지 않는다.
+Kotlin에서는 try-with-resource 구문이 존재하지 않는다.
 ```java
 try (BufferedReader bufferedReader = new BufferedReader(new FileReader("/path"))) {
     System.out.println(bufferedReader.readLine());
@@ -195,7 +195,3 @@ val bufferedReader = BufferedReader(FileReader("/path")).use { reader ->
 ```
 
 <br/>
-
----
-
-# 함수
