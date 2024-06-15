@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Kotlin Sealed vs Java Sealed   
-date: 2024-02-20 00:01:01 +09:00
+date: 2024-08-20 00:01:01 +09:00
 categories: [개발, Kotlin]
 tags: [kotlin, java, sealed]                    
 ---
